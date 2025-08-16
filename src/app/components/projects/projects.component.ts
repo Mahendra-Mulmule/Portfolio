@@ -8,22 +8,22 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
-      title: 'Student Management System',
-      description: 'A Spring Boot + Angular project to manage students with CRUD operations.',
-      image: 'assets/images/student-management.jpg',
-      link: 'https://github.com/yourusername/student-management'
+      title: 'Samstrack – Student Management System',
+      description: 'A full-stack web application that allows students to view their academic reports and overall information, while administrators can manage student records including adding, updating, and deleting details. Built with Java, Angular, and MySQL.',
+    
+      link: 'https://github.com/Mahendra-Mulmule/Samstrack'
     },
     {
-      title: 'Mock Scheduling Website',
-      description: 'A web app to schedule and send email notifications before mock interviews.',
-      image: 'assets/images/mock-scheduler.jpg',
-      link: 'https://github.com/yourusername/mock-scheduler'
+      title: 'Mock Preparation Platform',
+      description: 'A backend project that enables users to practice mock interview questions and receive automated feedback. Designed with a focus on backend logic and data handling using Java and MySQL.',
+
+      link: 'https://github.com/Mahendra-Mulmule/Springboot-MockPre'
     },
     {
-      title: 'Portfolio Website',
-      description: 'My personal portfolio built with Angular and Bootstrap.',
-      image: 'assets/images/portfolio.jpg',
-      link: 'https://yourportfolio.com'
+      title: 'Library Management System',
+      description: 'A BCA academic project developed using JavaScript that manages books, students, and borrowing records. It provides basic CRUD functionality and helps in maintaining library operations efficiently.',
+    
+      link: 'https://github.com/yourusername/library-management'
     }
   ];
 }
