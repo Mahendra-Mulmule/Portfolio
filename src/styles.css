@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+/* Make room for fixed navbar */
+main { padding-top: 4.5rem; }
+
+/* Nice background and card hover */
+body {
+  background: linear-gradient(180deg, #0d1117, #111827 60%, #0d1117);
+  color: #e5e7eb;
+}
+
+.card { border: 0; border-radius: 1rem; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 0.75rem 2rem rgba(0,0,0,.35); transition: .2s ease; }
+
+.section-title { letter-spacing: .5px; }
+.text-muted-2 { color: #9ca3af !important; }
+
+.btn-primary { background-color: #6c63ff; border-color: #6c63ff; }
+.btn-outline-light { border-color: #9ca3af; color: #e5e7eb; }
+.btn-outline-light:hover { background: #e5e7eb; color: #111827; }
+
+.navbar-dark .navbar-nav .nav-link.active { color: #fff; font-weight: 600; }
+
+.progress { background-color: #1f2937; height: 0.75rem; border-radius: 999px; }
+.progress-bar { background: linear-gradient(90deg, #6c63ff, #22d3ee); }
