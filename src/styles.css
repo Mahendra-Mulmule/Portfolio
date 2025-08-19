@@ -1,12 +1,57 @@
 body {
+  font-family: 'Poppins', sans-serif; /* modern clean font */
   background: linear-gradient(-45deg, #6c63ff, #22d3ee, #0ea5e9, #3b82f6);
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  color: #e5e7eb;
+  animation: gradientBG 12s ease infinite;
+  color: #f3f4f6; /* lighter text for better readability */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
+/* smooth gradient animation */
 @keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/* add a nice glass effect to cards/sections */
+.card, section {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  padding: 2rem;
+  margin: 2rem auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+/* buttons */
+button, .btn, .nav-link {
+  border-radius: 30px;
+  padding: 10px 22px;
+  background: linear-gradient(90deg, #22d3ee, #3b82f6);
+  border: none;
+  color: #fff !important;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover, .nav-link:hover {
+  background: linear-gradient(90deg, #3b82f6, #6c63ff);
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* headings */
+h1, h2, h3, h4 {
+  color: #ffffff;
+  text-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+  font-weight: 700;
 }
